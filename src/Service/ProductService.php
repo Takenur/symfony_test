@@ -173,7 +173,7 @@ class ProductService
         $em->persist($product);
         $em->flush();
 
-        return $this->response($product->getObject(), message: 'Product created successfully');
+        return $this->response($product->getObject(), message: 'Product created successfully',code: 201);
 
     }
 }
